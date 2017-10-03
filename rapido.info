@@ -1,0 +1,44 @@
+name = rapido
+description = A drupal theme using Jekyll to rapid prototype
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[pre_content]    = 'pre-Content'
+regions[content]        = 'Content'
+regions[post_content]   = 'post-Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = 'assets/css/main.min.css'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Javascripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = 'assets/js/bundle.min.js'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Settings
+;;;;;;;;;;;;;;;;;;;;;
+
+settings[bootstrap-cdn-provider]= 'jsDelivr'
+settings[bootstrap_fluid_container]= '1'
