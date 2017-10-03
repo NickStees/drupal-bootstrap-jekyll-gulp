@@ -12,7 +12,7 @@ To regenerate the theme, you'll need the following things installed on your loca
   - Used to install dependencies for Gulp.
 4. [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (mac users may need sudo) and `$ npm install gulp -D`
   - Used to generate the sass to css and process js files
-5. [Install Drupal Bootstrap](https://www.drupal.org/project/bootstrap) since these theme files are a subtheme of bootstrap. 
+5. [Install Drupal Bootstrap](https://www.drupal.org/project/bootstrap) since these theme files are a subtheme of bootstrap.
 
 ## Local Installation
 
@@ -23,7 +23,7 @@ To regenerate the theme, you'll need the following things installed on your loca
 ## Default Gulp Workflow
 
 Run the following command to launch BrowserSync and watch files for changes and triggering tasks to rebuild the themes assets.
-- gulp
+- `gulp`
 
 ## index.html
 Once BrowserSync is running you can start moifying sass and the index.html file to develop patterns. Copy and Paste Drupal markup from something like a view into the index.html then theme it. Then final adjustments can be done in Drupal directly.
