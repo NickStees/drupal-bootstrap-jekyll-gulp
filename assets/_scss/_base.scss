@@ -1,0 +1,95 @@
+// Global Defaults
+h2 {
+  font-weight: bold;
+}
+
+// Utility Functions
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.text-primary {
+  color: $brand-color-primary;
+}
+
+.text-secondary {
+  color: $brand-color-secondary;
+}
+
+.text-white {
+  color: $brand-color-white;
+}
+
+.border-primary{
+  border: solid 2px $brand-color-primary;
+}
+.border-secondary{
+  border: solid 2px $brand-color-secondary;
+}
+.border-white{
+  border: solid 2px $brand-color-white;
+}
+
+.background-primary {
+  background-color: $brand-color-primary;
+}
+
+.background-secondary {
+  background-color: $brand-color-secondary;
+}
+
+.background-dark {
+  background-color: $brand-color-black;
+  color: $brand-color-white;
+}
+
+.padded {
+  padding: 0.75em 0.45em;
+}
+
+.padded-h {
+  padding: 0.45em 0.75em;
+}
+
+
+// Buttons
+.btn {
+  font-family: $font-family-sans-serif;
+  transition: all 0.1s ease-in-out;
+  font-smoothing: antialiased;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translate(-1px, -3px);
+  box-shadow: 3px 6px 3px 2px rgba(0, 0, 0, 0.17);
+}
+
+.btn-default {
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.45);
+}
+
+.btn-xl {
+  padding: 0.35em 1.5em;
+  font-size: 1.45em;
+  border: $border-default-size solid $brand-color-white;
+  margin: 3px 0;
+}
+@include size(mdu) {
+  .btn-xl {
+    font-size: 2em;
+  }
+}
+
+// Bootstraps Nav
+.nav {
+  font-family: $font-family-sans-serif;
+}

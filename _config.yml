@@ -1,0 +1,3 @@
+name: Jekyll Theming
+markdown: kramdown
+exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json", "readme.md", "*.php" ,"*.info", "templates"]

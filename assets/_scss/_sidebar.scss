@@ -1,0 +1,37 @@
+// Sidebar menu for seciton navigation
+.sidebar-nav{
+  .nav{
+  li{
+      padding: 2px 0px;
+      margin: 2px 0;
+      > a{
+        display: block;
+        transition: all 0.2s;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid fade-out($brand-color-primary, .8);
+        border-left: 4px solid $brand-color-primary;
+        background-color: darken($gray-lighter, 10);
+        &:hover,
+        &.active{
+          background-color: fade-out($brand-color-secondary, .95);
+          border-left: 6px solid $brand-color-secondary;
+          color: darken($brand-color-primary, 15);
+        }
+      }
+    }
+    // top level item
+    &>li{
+      margin-bottom: 1.2rem;
+      > a{
+        font-weight: bold;
+      }
+      // sub-menu li
+      ul{
+        padding-left: 2rem;
+        li{
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}

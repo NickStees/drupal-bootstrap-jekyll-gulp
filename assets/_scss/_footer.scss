@@ -1,0 +1,38 @@
+#footer{
+  background-color: $brand-color-primary;
+  color: $brand-color-white;
+  padding: 2em 0;
+  line-height: 2.2;
+  a{
+    color: $brand-color-white;
+    &:not(.btn):hover,
+    &:active{
+      color: $brand-color-secondary;
+    }
+
+  }
+  ul{
+    margin: 0 35px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      list-style: none;
+      font-size: 1.1em;
+      &:before{
+        font-family: "FontAwesome";
+        content: "\f054";
+        margin-right: 8px;
+        font-size: 0.8em;
+      }
+    }
+  }
+  .logo{
+    max-width: 50%;
+    height: auto;
+  }
+  .copyright{
+    text-align: center;
+    padding: 2em 0 0 0;
+  }
+}

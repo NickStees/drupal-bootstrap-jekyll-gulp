@@ -1,0 +1,80 @@
+#navbar{
+  background-color: $brand-color-primary;
+  border-bottom: $border-default-size $brand-color-white solid;
+  height: 100px;
+  color: $brand-color-white;
+  z-index: 100;
+  button,
+  a{
+    color: $brand-color-white;
+  }
+  .navbar-collapse{
+    background-color: $brand-color-primary;
+    z-index: 999;
+    border-bottom: $border-default-size $brand-color-white solid;
+    box-shadow: none;
+    @include size(mdu) {
+      border: none;
+    }
+    .nav.social-nav{
+      & > li{
+        display: inline-block;
+      }
+    }
+  }
+  .icon-bar{
+      background-color: $brand-color-white;
+  }
+  .social-nav{
+    font-size: 1.2em;
+    margin-top: 10px;
+    a{
+      padding: 0.15em 0.5em;
+      &:hover,
+      &:active{
+        // background-color: fade-out($brand-color-white, 0.15);
+        color: $brand-color-secondary;
+        background: none;
+        // box-shadow: 0px 1px 1px $brand-color-secondary;
+      }
+    }
+  }
+
+  .top-nav{
+    clear: right;
+    a{
+      font-size: 1.5rem;
+      font-family: $font-family-sans-serif;
+      padding: 0.15em 0.5em;
+      // transition: all .2s ease-in-out;
+      text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      &:hover,
+      &:active{
+        // background-color: fade-out($brand-color-white, 0.15);
+        // color: $brand-color-primary;
+        background: none;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0);
+        // box-shadow: 0 7px 0px 0px $brand-color-secondary;
+        border-bottom: 7px solid $brand-color-secondary;
+      }
+      @include size(lgu) {
+        font-size: 2.2rem;
+      }
+      @include size(xlu) {
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  #svg-logo{
+    width: auto;
+    height: 80px;
+    padding-top: 10px;
+    .st0{
+      fill:$brand-color-white;
+    }
+  }
+}
+.navbar{
+  margin-bottom: 0;
+}

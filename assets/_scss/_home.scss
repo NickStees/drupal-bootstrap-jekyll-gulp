@@ -1,0 +1,107 @@
+#banner-news-events{
+  background-color: $brand-color-white;
+}
+
+#banner-videos{
+  background-color: $brand-color-primary;
+  color: $brand-color-white;
+  padding: 3.5em 0 2.5em 0;
+  border-bottom: $border-default-size $brand-color-white solid;
+}
+
+#banner-insta{
+  min-height: 20vh;
+  background-color: $brand-color-black;
+  color: $brand-color-white;
+  border-bottom: $border-default-size $brand-color-white solid;
+  padding: 3rem 5rem;
+  a{
+    color: $brand-color-white;
+  }
+  .pane-content{
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    .group{
+      flex: 1;
+    }
+  }
+}
+
+#banner-sail{
+  background-image: url('https://unsplash.it/1600/700');
+  background-size: cover;
+  .container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    .top{
+      padding: 1em;
+      .sail-logo{
+        background-color: $brand-color-primary;
+        color: $brand-color-white;
+        display: inline-block;
+        padding: 1em 2.2em;
+        border: $border-default-size $brand-color-white solid;
+
+        #sail-logo-svg{
+          max-height: auto;
+          width: 400px;
+          max-width: 40vw;
+          max-height: 30vh;
+          .st0{
+            fill: $brand-color-white;
+          }
+        }
+      }
+      .sail-award{
+        max-width: 40vw;
+        max-height: 30vh;
+      }
+    }
+    .air-gap{
+      flex-grow: 1;
+    }
+    .bottom{
+      background-color: $brand-dark-background;
+      padding: 1em 0;
+      text-align: center;
+    }
+  }
+}
+
+#banner-explore{
+  margin: 2em 0;
+  .explore-box{
+    background-image: url('https://unsplash.it/360/220');
+    height: 300px;
+    width: auto;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all .2s ease-in-out;
+    font-family: $font-family-sans-serif;
+    .air-gap{
+      flex-grow: 1;
+      transition: all .2s ease-in-out;
+    }
+    &:hover{
+      // transition: background-size 2s ease-in;
+      .caption{
+        transform: translate(0, -20px);
+      }
+    }
+    .caption{
+      text-align: center;
+      background-color: $brand-dark-background;
+      color: $brand-color-white;
+      font-size: 2em;
+      display: block;
+      width: 100%;
+      padding: 0.45em 0.65em;
+      transition: all .2s ease-in-out;
+    }
+  }
+}
