@@ -16,7 +16,9 @@ To regenerate the theme, you'll need the following things installed on your loca
 
 ## Local Installation
 
-1. Inside this directory, run `npm install`. This will read the projects package.json and install all the dependencies gulp needs.
+1. Clone this repo to the Drupal Themes folder as you would any other theme.
+2. This theme requires Drupal Bootstrap since its a sub-theme so install that and change the CDN to none. 
+3. Inside this directory, run `npm install`. This will read the projects package.json and install all the dependencies gulp needs.
 
 # Usage
 
